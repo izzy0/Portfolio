@@ -1,6 +1,6 @@
 // Styling for the portfolio section
-.portfolio {
-  margin-bottom: -15px;
+.portfolio {  
+  // margin-bottom: -15px;
   .portfolio-item {
     position: relative;
     display: block;
@@ -12,6 +12,9 @@
       transition: all ease 0.5s;
       opacity: 0;
       background-color: fade-out($primary, .1);
+      height: 350px;
+      width: 380px;
+      border-radius: 50%;
       &:hover {
         opacity: 1;
       }
@@ -21,10 +24,26 @@
     }
   }
   @media (min-width: 576px) {
-    margin-bottom: -30px;
+    // margin-bottom: -30px;
     .portfolio-item {
       margin-bottom: 30px;
     }
+  }
+  #portfolio-title{
+    padding-bottom: 3rem;
+  }
+  img{
+    height: 350px;
+    width: 380px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+  .w-100{
+    width: 95% !important; 
+  }
+  i{
+    font-size: 4rem;
+    @include varela-font;
   }
 }
 
@@ -48,6 +67,10 @@
     }
     h2 {
       font-size: 2rem;
+    }
+    img{
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
     }
   }
   @media(min-width: 768px) {

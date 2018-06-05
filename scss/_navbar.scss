@@ -1,23 +1,29 @@
 // Styling for the navbar
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  @include heading-font;
+  height: 45px;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background: rgba(24,188,156,1);
+  // border-bottom: 2.5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  // @include heading-font;
+  @include varela-font;
+  
   .navbar-brand {
     color: $white;
   }
   .navbar-nav {
-    margin-top: 1rem;
+    margin-top: 0rem;
     letter-spacing: 0.0625rem;
     li.nav-item {
       a.nav-link {
         color: $white;
         &:hover {
-          color: $primary;
+          color: $black;
         }
         &:active,
         &:focus {
-          color: $white;
+          color: $black;
         }
         &.active {
           color: $primary;
@@ -32,8 +38,8 @@
 }
 @media(min-width:992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -47,19 +53,18 @@
       margin-top: 0;
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: $white;
-      background: $primary;
+      color: $black;
       &:active,
       &:focus,
       &:hover {
-        color: $white;
-        background: $primary;
+        color: $black;
+        // background: rgba(14,188,156,1);
       }
     }
   }
   #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     .navbar-brand {
       font-size: 1.5em;
     }

@@ -38,6 +38,9 @@
   <meta name="msapplication-TileImage" content="icon.ico/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Font -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
   <title>Izhar Osman</title>
 
   <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
@@ -67,7 +70,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+  <nav class="navbar navbar-expand-lg fixed-top text-uppercase" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Izhar Osman</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse"
@@ -95,14 +98,14 @@
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
       <img class="img-fluid mb-5 d-block mx-auto" src="img/circleIzhar.png" alt="" width="300" height="300">
-      <h1 class="text-uppercase mb-0">Izhar Osman</h1>
-      <hr class="star-light">
+      <!-- <h1 class="text-uppercase mb-0">Izhar Osman</h1> -->
+      
       <h2 class="font-weight-light mb-0">Full Stack Developer - Graphic Artist - UX Designer</h2>
     </div>
-  </header>
+  
 
-  <!-- NOT Footer (Just using the footer properties ;) -->
-  <footer class="footer text-center">
+  <!-- Media Icons -->
+  <div class="media-icons text-center">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-5 mb-lg-0">
@@ -111,28 +114,23 @@
 
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/" target="_blank">
                 <i class="fa fa-fw fa-facebook"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://plus.google.com/u/0/117755350216874750951">
-                <i class="fa fa-fw fa-google-plus"></i>
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/i2hardesigns/" target="_blank">
+                <i class="fa fa-fw fa-instagram"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/i2hardesigns/">
-                <i class="fa fa-fw fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/izhar-osman-173a4aa8/">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/izhar-osman-173a4aa8/" target="_blank">
                 <i class="fa fa-fw fa-linkedin"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/izzy0">
-                <i class="fa fa-fw fa-dribbble"></i>
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/izzy0" target="_blank">
+                <i class="fa fa-fw fa-github"></i>
               </a>
             </li>
           </ul>
@@ -141,85 +139,45 @@
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</header>
 
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-      <hr class="star-dark mb-5">
+      <h2 class="text-center text-uppercase text-secondary" id="portfolio-title">Portfolio</h2>
+      
       <div class="row">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-6">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-2x" style="font-family: Lato;">Programs</i>
+                <i class="fa fa-2x" >Programs</i>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/code.png" alt="">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-2x" style="font-family: Lato;">Photography</i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/photo.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-6">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-2x" style="font-family: Lato;">Designs</i>
+                <i class="fa fa-2x">Designs</i>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/design.png" alt="">
           </a>
         </div>
-        <!--
-		  <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-2x" style="font-family: Lato;">Hobbies</i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-2x" style="font-family: Lato;">Empty :/</i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-2x" style="font-family: Lato;">Empty :/</i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-            </a>
-          </div>
-		  //-->
       </div>
     </div>
   </section>
-
+  
   <!-- About Section -->
+  <div class="lower-shadow">
   <section class="bg-primary text-white mb-0" id="about">
     <div class="container">
       <h2 class="text-center text-uppercase text-white">About</h2>
-      <hr class="star-light mb-5">
+     
       <div class="row">
         <div class="col-lg-4 ml-auto">
           <p class="lead">I have always had a passion for art at a young age. My favorite past-time was making creations with pencil and 
@@ -234,20 +192,36 @@
                my journey as a developer.</p>
         </div>
       </div>
-      <div class="text-center mt-4">
-        <!-- <a class="btn btn-xl btn-outline-light" href="#">
-
-          See ME!
-        </a> -->
+      <div class="text-center mt-4" id="techItems">
+        <h3 class="text-center text-white">Technologies</h3>
+          <div class="row">
+                <i class="devicon-android-plain-wordmark" title="Andriod"></i>
+                <i class="devicon-java-plain-wordmark" title="Java"></i>
+                <i class="devicon-html5-plain-wordmark" title="HTML 5/CSS"></i>
+                <i class="devicon-angularjs-plain" title="Angular JS"></i>
+                <i class="devicon-javascript-plain" title="Javascript"></i>
+                <i class="devicon-bootstrap-plain-wordmark" title="Bootstrap"></i>
+                <i class="devicon-php-plain" title="PHP"></i>
+                <i class="devicon-python-plain-wordmark" title="Python"></i>
+                <i class="devicon-mysql-plain-wordmark" title="MySQL"></i>
+                <i class="devicon-git-plain-wordmark" title="Git"></i>
+                <i class="devicon-gulp-plain" title="Gulp"></i>
+                <i class="devicon-illustrator-line" title="Illustrator"></i>
+                <i class="devicon-photoshop-line" title="Photoshop"></i>
+                <!-- <i class="devicon-git-plain"></i> -->
+                <!-- <i class="devicon-github-plain"></i> -->
+                <!-- <i class="devicon-csharp-plain"></i> -->
+                <!-- <i class="devicon-react-original-wordmark"></i> -->
+                <!-- <i class="devicon-nodejs-plain"></i> -->     
+          </div>
       </div>
     </div>
   </section>
-
+</div>
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-      <hr class="star-dark mb-5">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -292,7 +266,7 @@
     </div>
   </section>
 
-  <div class="copyright py-4 text-center text-white">
+  <div class="copyright text-center text-white">
     <div class="container">
       <small>Copyright &copy; Izhar Osman Portfolio 2018</small>
     </div>
@@ -318,7 +292,6 @@
           <!-- Project HEAD-->
           <div class="col-lg-12 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0" style="padding-bottom:3rem;">Projects</h2>
-            <!-- <hr class="star-dark mb-7"> -->
           </div class="row">
           <!-- Project 1-->
           <div class="col-lg-4">
@@ -389,7 +362,6 @@
         <div class="row" style="padding-left: 2%;">
           <div class="mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Photography</h2>
-            <!-- <hr class="star-dark mb-5"> -->
 
             <div id="gallery" class="gallery">
               <div id="images" class="iamges">
@@ -418,7 +390,6 @@
         <div class="row" style="padding-left: 2%;">
           <div class="mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Designs</h2>
-            <!-- <hr class="star-dark mb-5"> -->
 
             <!-- <img class="img-fluid mb-5" src="https://ps.w.org/under-construction-page/assets/screenshot-13.png?rev=1601678" alt=""> -->
 
@@ -449,7 +420,6 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Hobbies</h2>
-            <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="https://ps.w.org/under-construction-page/assets/screenshot-13.png?rev=1601678" alt="">
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
@@ -470,7 +440,6 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Personal Space</h2>
-            <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="https://i0.wp.com/thoughtforyourpenny.com/wp-content/uploads/Rick-and-Morty-S02E08-Interdimensional-Cable-Personal-Space.jpg"
               alt="">
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
@@ -492,7 +461,6 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Empty Thinking Space</h2>
-            <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="https://ps.w.org/under-construction-page/assets/screenshot-13.png?rev=1601678" alt="">
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>

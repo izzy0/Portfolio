@@ -1,8 +1,7 @@
 // Styling for the navbar
 #mainNav {
-  height: 45px;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background: rgba(24,188,156,1);
   // border-bottom: 2.5px solid rgba(0, 0, 0, 0.2);
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
@@ -13,7 +12,7 @@
     color: $white;
   }
   .navbar-nav {
-    margin-top: 0rem;
+    margin-top: 0.5rem;
     letter-spacing: 0.0625rem;
     li.nav-item {
       a.nav-link {
@@ -26,7 +25,7 @@
           color: $black;
         }
         &.active {
-          color: $primary;
+          color: $black;
         }
       }
     }
@@ -38,6 +37,7 @@
 }
 @media(min-width:992px) {
   #mainNav {
+    height: 45px;
     padding-top: 0rem;
     padding-bottom: 0rem;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;

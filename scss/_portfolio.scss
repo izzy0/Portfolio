@@ -4,7 +4,7 @@
   .portfolio-item {
     position: relative;
     display: block;
-    max-width: 25rem;
+    max-width: 15rem;
     margin-bottom: 15px;
     .portfolio-item-caption {
       -webkit-transition: all ease 0.5s;
@@ -26,23 +26,25 @@
   @media (min-width: 576px) {
     // margin-bottom: -30px;
     .portfolio-item {
+       width: 250px;
+       height: 250px;
       margin-bottom: 30px;
     }
   }
   #portfolio-title{
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
   }
   img{
-    height: 350px;
-    width: 380px;
+    // height: 350px;
+    // width: 250px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
   }
-  .w-100{
-    width: 95% !important; 
+  .h-100{
+    height: 97% !important; 
   }
   i{
-    font-size: 4rem;
+    font-size: 2rem;
     @include varela-font;
   }
 }
@@ -73,6 +75,7 @@
       border-radius: 50%;
     }
   }
+  
   @media(min-width: 768px) {
     .portfolio-modal-dialog {
       min-height: 100vh;
@@ -82,5 +85,11 @@
         font-size: 3rem;
       }
     }
+    .small-screen{
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
+

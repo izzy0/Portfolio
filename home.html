@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -147,8 +147,8 @@
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary" id="portfolio-title">Portfolio</h2>
       
-      <div class="row">
-        <div class="col-md-6 col-lg-6">
+     <div class="row">
+        <!-- <div class="col-md-6 col-lg-6">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -157,9 +157,9 @@
             </div>
             <img class="img-fluid" src="img/portfolio/code.png" alt="">
           </a>
-        </div>
+        </div> -->
 
-        <div class="col-md-6 col-lg-6">
+        <!-- <div class="col-md-6 col-lg-6">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -168,38 +168,38 @@
             </div>
             <img class="img-fluid" src="img/portfolio/design.png" alt="">
           </a>
-        </div>
+        </div> -->
 
-        <div class="col-md-6 col-lg-6">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+        <div class="col-md-4 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-2x">Designs</i>
+                  <i class="fa fa-2x">Metro</i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/design.png" alt="">
+              <img class="img-fluid mb-5" src="img/portfolio/projects/metro.png" alt="" style="padding: 10px;">
             </a>
           </div>
 
-          <div class="col-md-6 col-lg-6">
-              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                    <i class="fa fa-2x">Designs</i>
+          <div class="col-md-4 col-lg-4">
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+                  <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                          <i class="fa fa-2x">SWF Security Checker</i>
+                      </div>
                   </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/design.png" alt="">
+                  <img class="img-fluid mb-5" src="img/swf.png" alt="" style="padding: 10px;">
               </a>
             </div>
 
-            <div class="col-md-6 col-lg-6">
-                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-                  <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                    <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                      <i class="fa fa-2x">Designs</i>
+            <div class="col-md-4 col-lg-4">
+                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fa fa-2x">Dead Snow</i>
+                        </div>
                     </div>
-                  </div>
-                  <img class="img-fluid" src="img/portfolio/design.png" alt="">
+                    <img class="img-fluid mb-5" src="img/deadsnow.png" alt="" style="padding: 10px;">
                 </a>
               </div>
 
@@ -229,7 +229,7 @@
       </div>
       <div class="text-center mt-4" id="techItems">
         <h3 class="text-center text-white">Technologies</h3>
-          <div class="row">
+          <div class="row" id="techRow">
                 <i class="devicon-android-plain-wordmark" title="Andriod"></i>
                 <i class="devicon-java-plain-wordmark" title="Java"></i>
                 <i class="devicon-html5-plain-wordmark" title="HTML 5/CSS"></i>
@@ -447,15 +447,24 @@
 
   <!-- Portfolio Modal 4 -->
   <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+    <div class="small-screen">
     <div class="portfolio-modal-dialog bg-white">
       <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
         <i class="fa fa-3x fa-times"></i>
       </a>
       <div class="container text-center">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Hobbies</h2>
-            <img class="img-fluid mb-5" src="https://ps.w.org/under-construction-page/assets/screenshot-13.png?rev=1601678" alt="">
+          <div class="col-lg-12 mx-auto">
+            <!-- Project 1-->
+          <div class="col-lg-12">
+              <a href="https://play.google.com/store/apps/details?id=com.russwilkie.metrostatemobile&hl=en">
+                <img class="img-fluid mb-5" src="img/portfolio/projects/metro.png" alt="" style="padding: 10px;">
+              </a>
+              <h3 class="text-secondary text-uppercase mb-0">Metropolitan state University App</h3>
+              <p class="mb-5">The Metropolitan State University(MSU) mobile app provides access to information on what is going on and about
+                Metrostate. Get instant access to campus events, cancellations, campus directory, campus maps, Gateway services,
+                and social media.</p>
+            </div>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
               Close Project</a>
@@ -463,47 +472,71 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- Portfolio Modal 5 -->
   <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="small-screen">
     <div class="portfolio-modal-dialog bg-white">
       <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
         <i class="fa fa-3x fa-times"></i>
       </a>
       <div class="container text-center">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Personal Space</h2>
-            <img class="img-fluid mb-5" src="https://i0.wp.com/thoughtforyourpenny.com/wp-content/uploads/Rick-and-Morty-S02E08-Interdimensional-Cable-Personal-Space.jpg"
-              alt="">
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
+            <div class="col-lg-12 mx-auto">
+                <!-- Project 2-->
+                <div class="col-lg-12">
+                    <a href="https://github.com/izzy0/SWF-Check/blob/master/swf_check.py">
+                        <img class="img-fluid mb-5" src="img/swf.png" alt="" style="padding: 10px;">
+                    </a>
+                    <h3 class="text-secondary text-uppercase mb-0">Python SWF-Checker</h3>
+                    <p class="mb-5">
+                        This program checks the integrity of shock wave files for embed links that could cause users harm. If the file
+                        is flagged it is written to a text documents along with the link flagged.
+                    </p>
+                </div>
+                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                    <i class="fa fa-close"></i>
+                    Close Project
+                </a>
+            </div>
         </div>
       </div>
     </div>
+      </div>
   </div>
 
   <!-- Portfolio Modal 6 -->
   <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+      <div class="small-screen">
     <div class="portfolio-modal-dialog bg-white">
       <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
         <i class="fa fa-3x fa-times"></i>
       </a>
       <div class="container text-center">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Empty Thinking Space</h2>
-            <img class="img-fluid mb-5" src="https://ps.w.org/under-construction-page/assets/screenshot-13.png?rev=1601678" alt="">
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
+            <div class="col-lg-12 mx-auto">
+                <!-- Project 5-->
+                <div class="col-lg-12">
+                    <a href="https://play.google.com/store/apps/details?id=appinventor.ai_izharosman.deadSnowAPP&hl=en">
+                        <img class="img-fluid mb-5" src="img/deadsnow.png" alt="" style="padding: 10px;">
+                    </a>
+                    <h3 class="text-secondary text-uppercase mb-0">Dead Snow</h3>
+                    <p class="mb-5">
+                        Dead Snow is a game for android devices. The purpose of the game is to dodge as many snow flakes as you can without
+                        getting hit!
+                    </p>
+                </div>
+                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                    <i class="fa fa-close"></i>
+                    Close Project
+                </a>
+            </div>
         </div>
       </div>
     </div>
+      </div>
   </div>
 
   <!-- Bootstrap core JavaScript -->
